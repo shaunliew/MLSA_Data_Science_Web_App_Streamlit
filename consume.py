@@ -1,14 +1,12 @@
 import streamlit as st
-# from utils import PrepProcesor, columns
-from sklearn.preprocessing import StandardScaler
-import numpy as np
 import pandas as pd
 import pickle
 pickled_model = pickle.load(open('model.pkl', 'rb'))
 pickled_scaler = pickle.load(open('scaler.pkl', 'rb'))
 st.title('Does he/she survived from Titantic? :ship:')
-st.write('we gonna using the model we trained to predict if the passenger survived.')
-st.subheader('Fill the form below make prediction')
+st.caption(
+    'we gonna using the model we trained just now to predict if the passenger survived or not.')
+st.subheader('Fill the form below make prediction.')
 
 form = st.form(key='my-form')
 
