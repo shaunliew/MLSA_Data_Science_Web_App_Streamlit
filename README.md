@@ -150,7 +150,7 @@ Congratulations! You have successfully installed the Python extension for Visual
 3. run `git clone https://github.com/shaunliew/MLSA_Data_Science_Web_App_Streamlit.git`
 4. Open `MLSA_DataScience_Web_App_Streamlit` folder using VSCode.
 5. Open terminal in VSCode
-6. create virtual env `python3 -m venv venv`
+6. create virtual env `python3.10 -m venv venv`
 7. Activate virtual env `d:/MLSA_Data_Science_Web_App_Streamlit/venv/Scripts/Activate.ps1`
 8. run `pip install -r requirements.txt`
 
