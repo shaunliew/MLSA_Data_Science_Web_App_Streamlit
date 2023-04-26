@@ -3,8 +3,10 @@
 > Are you interested in creating a web app that can predict whether someone would have survived the Titanic disaster? In this hands-on workshop, we'll show you how to do just that using Streamlit. First, we'll create a **classification model for Titanic survival prediction using logistic regression**. Then, we'll dive into **Streamlit** and learn how to **build an interactive web app** that can leverage this machine learning model. By the end of the workshop, you'll have a fully functional web app that you can share with your friends and family. Don't miss out on this opportunity to level up your data science skills!
 
 ---
+
 [walkthrough article](https://shaunliew.hashnode.dev/build-your-first-data-science-web-app-using-streamlit-mlsa-usm)
 
+If you need any help, just switch branch to 'solution' branch.
 ## **How to Start?**
 
 ### **Software Installation**
