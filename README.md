@@ -3,6 +3,7 @@
 > Are you interested in creating a web app that can predict whether someone would have survived the Titanic disaster? In this hands-on workshop, we'll show you how to do just that using Streamlit. First, we'll create a **classification model for Titanic survival prediction using logistic regression**. Then, we'll dive into **Streamlit** and learn how to **build an interactive web app** that can leverage this machine learning model. By the end of the workshop, you'll have a fully functional web app that you can share with your friends and family. Don't miss out on this opportunity to level up your data science skills!
 
 ---
+[walkthrough article](https://shaunliew.hashnode.dev/build-your-first-data-science-web-app-using-streamlit-mlsa-usm)
 
 ## **How to Start?**
 
@@ -20,25 +21,26 @@ These are the setup that you need to have for this workshop:
 1. go to [GitHub](https://github.com/)
 2. go to Signup page 
 
-![github homepage](Screenshot/github_home.png)
+<img src="Screenshot/github_home.png" alt="github homepage" width="400"/>
+
 
 3. enter your credential
 
-![github signup](Screenshot/github_signup.png)
+<img src="Screenshot/github_signup.png" alt="github signup" width="400"/>
 
 4. Verify your account by answering the question.
 
 5. Enter the launch code that has been sent to your email address.
 
-![github launch_code](Screenshot/launch_code.png)
+<img src="Screenshot/launch_code.png" alt="github launch_code" width="400"/>
 
 6. Answer the questions according to your choice then click `continue`
 
-![github question](Screenshot/question.png)
+<img src="Screenshot/question.png" alt="github question" width="400"/>
 
 7. Select the GitHub plan according to your choice. A free account is sufficient for you to attend this workshop.
 
-![github plan](Screenshot/plan.png)
+<img src="Screenshot/plan.png" alt="github plan" width="400"/>
 
 Congratulations! Your GitHub account has been created successfully.
 
@@ -52,23 +54,23 @@ Congratulations! Your GitHub account has been created successfully.
 
 2. scroll down to look for a specific release and search for `python 3.9.10`.
 
-![version](Screenshot/version.png)
+<img src="Screenshot/version.png" alt="version" width="400"/>
 
 >**For Mac OS users, you may refer to this [link](https://learn.microsoft.com/en-us/training/modules/python-install-vscode/3-exercise-install-python3?pivots=macos).** 
-
+>
 >**For Linux users, you may refer to this [link](https://learn.microsoft.com/en-us/training/modules/python-install-vscode/3-exercise-install-python3?pivots=linux).**   
 
 3. Now scroll down to the Files section and look for the Windows x86-64 executable installer and download it. 
 
-![installer](Screenshot/python_installer.png)
+<img src="Screenshot/python_installer.png" alt="installer" width="400"/>
 
 4. After downloading successfully, click on the downloaded file and click Install Now. 
 
-![installing](Screenshot/installing.png)
+<img src="Screenshot/installing.png" alt="installing" width="400"/>
 
 5. The installation is done.
 
-![python_done](Screenshot/python_done.png)
+<img src="Screenshot/python_done.png" alt="python_done" width="400"/>
 
 #### **Verifying Python is installed in Windows**
 
@@ -80,7 +82,7 @@ Congratulations! Your GitHub account has been created successfully.
 >
 >The version of the python which you have installed will be displayed if the python is successfully installed on your windows. 
 
-![checking1](Screenshot/checking1.png)
+<img src="Screenshot/checking1.png" alt="checking1" width="400"/>
 
 > Now we need to verify Pip is installed in Windows.  
 >(Pip is a powerful package management system for Python software packages.) 
@@ -93,55 +95,56 @@ Congratulations! Your GitHub account has been created successfully.
 >
 >The following output appears if pip is installed successfully.
 
-![checking2](Screenshot/checking2.png)
+<img src="Screenshot/checking2.png" alt="checking2" width="400"/>
 
 Congratulations, you have successfully installed Python and pip on your Windows system. 
 
 #### Visual Studio Code
 
 1. go to [Visual Studio Code Download](https://code.visualstudio.com/Download)
-> Mac OS user refer this [link](https://www.youtube.com/watch?v=P8ueOjodgkA)
 
+> Mac OS user refer this [link](https://www.youtube.com/watch?v=P8ueOjodgkA)
+>
 > Linux user refer this [link](https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-20-04/)
 
-2.Click the first option **Windows** to download VS Code.  
+2.Click the first option **Windows** to download VS Code.
 
-![vscode download](Screenshot/vscode_download.png)
+<img src="Screenshot/checking2.png" alt="checking2" width="400"/>
 
-3.Double click the downloaded file. A dialogue box will appear. Select I accept the agreement > select Next. 
-![vscode agreement](Screenshot/agreement.png)
+3.Double click the downloaded file. A dialogue box will appear. Select I accept the agreement > select Next.
+
+<img src="Screenshot/agreement.png" alt="vscode agreement" width="400"/>
 
 4. Select a folder by clicking Browse or just follow the default path > select Next.
 
-![vscode start_menu](Screenshot/start_menu.png)
+<img src="Screenshot/start_menu.png" alt="vscode start_menu" width="400"/>
 
-5. Select Create a desktop icon so that it can be accessed from desktop > select the other options as per your need by clicking in the checkbox > select Next. 
+5. Select Create a desktop icon so that it can be accessed from desktop > select the other options as per your need by clicking in the checkbox > select Next.
 
-![setup](Screenshot/setup.png)
+<img src="Screenshot/setup.png" alt="setup" width="400"/>
 
-6. Select Install. 
+6. Select Install.
 
-![install](Screenshot/install.png)
+<img src="Screenshot/install.png" alt="install" width="400"/>
 
-7. Select Finish to exit Setup > check in the check box to launch VS Code right now. 
+7. Select Finish to exit Setup > check in the check box to launch VS Code right now.
 
-![finish](Screenshot/finish.png)
+<img src="Screenshot/finish.png" alt="finish" width="400"/>
+
 
 #### Install Python Extension for Visual Studio Code 
 
 1. In Visual Studio Code, from the menu bar select View > Extensions to open the Extensions view.
 
-![extension](Screenshot/extension.png)
+<img src="Screenshot/extension.png" alt="extension" width="400"/>
 
-2. Enter `python` in the search box at the top of the Extensions view. 
+2. Enter `python` in the search box at the top of the Extensions view.
 
-3. Select the 'Python' extension published by Microsoft (described as IntelliSense (Pylance) and usually the first one in the list). The details about that extension appear in a tabbed panel on the right. In the either Extensions panel, or in the main panel, select `Install`. 
+3. Select the 'Python' extension published by Microsoft (described as IntelliSense (Pylance) and usually the first one in the list). The details about that extension appear in a tabbed panel on the right. In the either Extensions panel, or in the main panel, select `Install`.
 
-![install_extension](Screenshot/install_extension.png)
+<img src="Screenshot/install_extension.png" alt="install_extension" width="400"/>
 
-Congratulations! You have successfully installed the Python extension for Visual Studio Code. 
-
-
+Congratulations! You have successfully installed the Python extension for Visual Studio Code.
 
 ## How to clone this program
 
@@ -155,6 +158,8 @@ Congratulations! You have successfully installed the Python extension for Visual
 8. run `pip install -r requirements.txt`
 
 Now you are good to go for this workshop. See you in the workshop.
+
+for walkthrough, please visit this [hashnode article](https://shaunliew.hashnode.dev/build-your-first-data-science-web-app-using-streamlit-mlsa-usm)
 
 ## Features used
 
@@ -192,19 +197,6 @@ What is the *prediction result*?
 What is the *prediction result*?
 
 ---
-
-## Thank you for joining this workshop
-
-Feel free to contact me if you have any further questions.
-
-Email: Shaun.Liew@studentambassdaors.com
-
-This workshop is prepared by [*Shaun Liew*](https://www.linkedin.com/in/shaunliew20/) from:
-
-[Beta Microsoft Learn Student Ambassador from Universiti Sains Malaysia](https://www.facebook.com/MicrosoftLearnStudentAmbassadors.USM)
-
----
-
 References:
 
 [The difference between linear regression and logistic regression linkedin post](https://www.linkedin.com/pulse/difference-between-linear-regression-logistic-shaun-liew/)
@@ -216,3 +208,17 @@ References:
 [streamlit reference](https://docs.streamlit.io/library/api-reference)
 
 [FAQ](https://stackoverflow.com/questions/73095119/userwarning-x-does-not-have-valid-feature-names-but-logisticregression-was-fit)
+
+[Video reference](https://www.youtube.com/watch?v=Ebb4gUI2IpQ)
+
+---
+
+## Thank you for joining this workshop
+
+Feel free to contact me if you have any further questions.
+
+Email: Shaun.Liew@studentambassdaors.com
+
+This workshop is prepared by [*Shaun Liew Xin Hong*](https://www.linkedin.com/in/shaunliew20/) from:
+
+[Beta Microsoft Learn Student Ambassador from Universiti Sains Malaysia](https://www.facebook.com/MicrosoftLearnStudentAmbassadors.USM)

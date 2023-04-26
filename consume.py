@@ -1,15 +1,19 @@
+# import the libraries (streamit, pandas, pickle)
 import streamlit as st
 import pandas as pd
 import pickle
+# import the pickled model and scaler
 pickled_model = pickle.load(open('model.pkl', 'rb'))
 pickled_scaler = pickle.load(open('scaler.pkl', 'rb'))
+# create header for the streamlit app
 st.title('Does he/she survived from Titantic? :ship:')
 st.caption(
     'we gonna using the model we trained just now to predict if the passenger survived or not.')
 st.subheader('Fill the form below make prediction.')
 
+# Create a form for user input
 form = st.form(key='my-form')
-
+# Create the rows according to the features needed for the form.
 # Name
 Name = form.text_input('Name')
 # First feature : Pclass
@@ -30,6 +34,7 @@ embarked = form.selectbox('Port of Embarkation', options=[
                           'Cherbourg', 'Queenstown', 'Southampton'])
 predict = form.form_submit_button('Predict')
 
+# Make prediction based on user input
 if predict:
     # convert sex to 0 and 1
     Sex = 0 if sex == "Male" else 1
